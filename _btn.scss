@@ -1,0 +1,54 @@
+.maxskill{
+    .btnStarted{
+        width: 100px;
+        background-image:$bgimg;
+        line-height: 30px;
+        border-radius: 20px;
+        color:black;
+        grid-area:btn;
+     }
+     .btnStarted:hover{
+        cursor: pointer;
+     }
+}
+.container{
+    
+    .navlist{
+                         display: flex;   
+                         justify-content: space-between;  
+                         padding: 10px 20%;   
+                        li{
+                            list-style: none;
+                            
+                        }
+                        .skilled{
+                            font-weight: bold;
+                            font-size: 20px;
+                        }
+                        .btngetstarted{
+                            background-color:#13193f ;
+                            color: #fff;
+                            padding:8px;
+                            border-radius: 50px;
+                        }
+                        .btngetstarted:hover{
+                            cursor: pointer;
+                        }
+                }
+            
+    footer{
+        width: 100%;
+        height: 70px;
+        background-color: #13183e;
+        margin-top: 50px;
+        color:white;
+        display: grid;
+        align-content: center;
+    }
+        .footerlist{
+            @extend .navlist;
+        .btngetstarted{
+            background-image: $bgimgft;
+        }
+    }
+}

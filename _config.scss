@@ -1,0 +1,72 @@
+$getst:#f95669;
+$bgimg:linear-gradient(#fd6850,#f02ea1);
+$bgimgft:linear-gradient(rgb(115, 115, 229),#f02ea1);
+
+
+.card{
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 2px 1px rgb(99, 99, 55); 
+    background-color:rgba(169, 169, 90, 0.806);
+    display: block;
+    padding: 0px 25px 15px 25px;
+    h3{
+        padding: 40px 0px 10px 0px;
+    }
+    .getstarted{ 
+        /*position: relative; /* .card မှာ relative ထားပြီး ဒီမှာကျ
+                              absoluteထားလိုက်တဲ့ခါ အကွာ​ဝေးကို .cardအတွင်းမှာ
+                             စတွက်ပေးတော့တယ်။ */
+       /* top:20%; */
+        color:$getst ;
+        font-weight: bold;  
+    }
+  
+    p{
+        opacity: 50%;
+       
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient:vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 20px;
+    }
+ 
+   
+
+}
+.card1{
+    @extend .card;
+    background-image: $bgimg;
+    color: #fff;
+}
+
+/* Set up for Course Hours and Members */
+@mixin setcover{
+    display: grid;
+    align-content:end;
+    grid-column: 6;
+    grid-row: 3/4;
+    position: relative;
+    z-index: 1;
+}
+@mixin setbg(){
+    background-color:rgb(155, 146, 146);
+    box-shadow: 1.5px 1px rgb(197, 186, 186);
+    display:grid;
+    width:80px;
+    height: 50px;
+    border-radius: 5px;
+    justify-content:center;
+    align-content: center;
+}
+
+.amt{ 
+    display: grid;
+    justify-items: center;
+    font-weight: bold;
+}
+.notiname{
+    opacity: 50%;
+}
